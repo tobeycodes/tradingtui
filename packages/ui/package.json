@@ -1,0 +1,28 @@
+{
+	"$schema": "https://www.schemastore.org/package.json",
+	"dependencies": {
+		"@base-ui/react": "1.1.0",
+		"class-variance-authority": "0.7.1",
+		"clsx": "2.1.1",
+		"lucide-react": "0.563.0",
+		"react": "19.2.4",
+		"tailwind-merge": "3.4.0"
+	},
+	"devDependencies": {
+		"@repo/config-typescript": "workspace:*",
+		"@types/react": "19.2.13",
+		"typescript": "5.9.3"
+	},
+	"exports": {
+		"./components/*": "./src/components/*.tsx",
+		"./lib/*": "./src/lib/*.ts"
+	},
+	"name": "@repo/ui",
+	"private": true,
+	"scripts": {
+		"check-types": "tsc --noEmit"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"version": "0.0.0"
+}
